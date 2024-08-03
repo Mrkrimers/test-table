@@ -1,0 +1,48 @@
+.table {
+    border-collapse: collapse;
+    max-width: 100%;
+
+    table {
+        margin: auto;
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 4px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #f2f2f2;
+
+        .rotate {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+        }
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .cellTrue {
+        background-color: rgb(255, 255, 255);
+        transition: all 0.5s;
+
+        &:hover {
+            cursor: pointer;
+            scale: 1.03;
+        }
+    }
+
+    .cellFalse {
+        background-color: rgb(18, 154, 45);
+        transition: all 0.5s;
+
+        &:hover {
+            cursor: pointer;
+            scale: 1.03;
+        }
+    }
+}
